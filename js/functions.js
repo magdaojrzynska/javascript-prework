@@ -13,6 +13,7 @@ var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
 
 function buttonClicked(argButtonName, buttonRock, buttonPaper, buttonScissors) {
   clearMessages();
+  playerMove = argButtonName;
   console.log(argButtonName + ' został kliknięty');
 }
 
@@ -76,9 +77,9 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 
-playerMove = argButtonName
-console.log('wybór ruchu gracza to: ' + playerInput);
-playerMove = argButtonName
+// playerMove = argButtonName;
+// console.log('wybór ruchu gracza to: ' + playerInput);
+// playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
