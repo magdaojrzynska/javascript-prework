@@ -23,10 +23,9 @@ function getMoveName(argMoveId) {
     }
   }
   
-var computerMove, randomNumber;
-randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 printMessage('Mój ruch: ' + computerMove);
 
 var playerMove, playerInput;
@@ -35,7 +34,7 @@ console.log('Wpisana odpowiedź to: ' + playerInput);
 playerMove = getMoveName(playerInput)
 printMessage('Twój ruch: ' + playerMove);
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+var argMoveId, argPlayerMove, argComputerMove, playerMove, playerInput;
 
 
 function displayResult(argPlayerMove, argComputerMove) {
