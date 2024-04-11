@@ -28,14 +28,12 @@ console.log('wylosowana liczba to: ' + randomNumber);
 const computerMove = getMoveName(randomNumber);
 printMessage('Mój ruch: ' + computerMove);
 
-var playerMove, playerInput;
-playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+const playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('Wpisana odpowiedź to: ' + playerInput);
-playerMove = getMoveName(playerInput)
+const playerMove = getMoveName(playerInput)
 printMessage('Twój ruch: ' + playerMove);
 
-var argMoveId, argPlayerMove, argComputerMove, playerMove, playerInput;
-
+var argMoveId, argPlayerMove, argComputerMove;
 
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
