@@ -65,16 +65,14 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
 }
 
-// buttonTest = document.getElementById('button-test');
+// const buttonTest = document.getElementById('button-test');
 // buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
-var buttonTest, buttonRock, buttonPaper, buttonScissors;
-
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('Guzik KAMIEŃ'); });
 
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('Guzik PAPIER'); });
 
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('Guzik NOŹYCZKI'); });
