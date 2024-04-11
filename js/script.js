@@ -33,8 +33,6 @@ console.log('Wpisana odpowiedź to: ' + playerInput);
 const playerMove = getMoveName(playerInput)
 printMessage('Twój ruch: ' + playerMove);
 
-var argMoveId, argPlayerMove, argComputerMove;
-
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
